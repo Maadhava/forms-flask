@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{%block content%}
+     {% for mov in movies %}
+        <h1>movie details</h1>
+        <p>directed by:{{mov.director}}</p>
+        <p>movie:{{mov.movie_name}}</p>
+        <p>genre:{{mov.genre}}</p>
+        <p>date:{{mov.release}}</p>
+     {% endfor %}
+{% endblock %}
